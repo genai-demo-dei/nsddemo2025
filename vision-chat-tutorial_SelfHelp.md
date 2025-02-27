@@ -1,4 +1,4 @@
-# Understanding Multimodal AI: A Hands-on Tutorial with Ollama and LLaMA 3.2 Vision
+# Understanding Multimodal AI Systems: A Hands-on Tutorial with Ollama and LLaMA 3.2 Vision
 
 ## 1. Introduction
 
@@ -100,7 +100,7 @@ Quantization is a technique that reduces the precision of the numbers used to re
 Ollama supports models in the GGUF (GPT-Generated Unified Format) format, which is a modern format designed specifically for efficient storage and inference of large language models. Within the GGUF format, several quantization methods are available:
 
 **Precision Levels:**
-- **F16**: 16-bit floating point (full precision)
+- **F16**: 16-bit floating point 
 - **Q8_0**: 8-bit quantization
 - **Q6_K**: 6-bit quantization with K-quants
 - **Q5_K_M**: 5-bit quantization with K-quants and attention middleware
@@ -124,6 +124,12 @@ The choice of quantization affects several aspects of model behavior:
 
 The trade-off between these factors means that different quantization levels are appropriate for different hardware configurations and use cases.
 
+Read More about quantization here: 
+1. https://huggingface.co/docs/optimum/en/concept_guides/quantization
+2. https://medium.com/data-science-at-microsoft/exploring-quantization-in-large-language-models-llms-concepts-and-techniques-4e513ebf50ee
+3. https://arxiv.org/html/2403.06408v1
+4. https://github.com/ollama/ollama/blob/main/docs/import.md
+
 ## 4. Implementation Workflow
 
 This section provides a detailed explanation of each step in the implementation process for our vision chat application.
@@ -141,7 +147,7 @@ The first step involves installing the necessary Python packages for our applica
 
 ### 4.2 Installing and Running Ollama
 
-Ollama needs to be installed and running as a service to handle model inference. To accomplish this, 
+Ollama needs to be installed and running as a service to handle model inference. To accomplish this,
 open terminal in the Colab Notebook and write the following commands:
 
 ```bash
@@ -331,7 +337,7 @@ When working with LLaMA 3.2 Vision through Ollama, you can control the model's b
 Here's an example of how to modify the `query_ollama_vision` function to include these parameters:
 
 ```python
-def query_ollama_vision(prompt, image_base64=None, model="llama3.2-vision:11b", 
+def query_ollama_vision(prompt, image_base64=None, model="llama3.2-vision:11b",
                         temperature=0.8, top_k=40, top_p=0.9, num_predict=512):
     url = "http://localhost:11434/api/generate"
 
