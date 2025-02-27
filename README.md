@@ -4,7 +4,7 @@
 
 ### Overview
 This repository contains the Jupyter Notebooks and resources for the **Generative AI (GenAI) Demo** presented at **DEI 2025** on **National Science Day (February 28, 2025)**.
-The demo showcases how Online and Offline GenAI models can be leveraged for RAG Pipelines and multimodal AI applications.
+The demo showcases how Online and Offline GenAI models can be leveraged for RAG Pipelines and Multimodal AI Applications.
 
 ### Contents
 - **Jupyter Notebooks**: Hands-on notebooks demonstrating uses cases for RAG and Multimodal AI
