@@ -1,4 +1,4 @@
-# Understanding Multimodal AI Systems: A Hands-on Tutorial with Ollama and LLaMA 3.2 Vision
+# Understanding Multimodal AI: A Hands-on Tutorial with Ollama and LLaMA 3.2 Vision
 
 ## 1. Introduction
 
