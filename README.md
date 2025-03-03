@@ -12,7 +12,7 @@ The demo showcases how Online and Offline GenAI models can be leveraged for RAG 
 - **README (`README.md`)**: Documentation and instructions.
 
 ### How to Use
-#### **Run on Google Colab (No Installation Required)**
+#### **Run on Google Colab (No Local Set-Up Required)**
 ```
 
 ### Topics Covered
